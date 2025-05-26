@@ -1,0 +1,27 @@
+<!--Menampilkan prompt box-->
+<html>
+<body>
+    
+    <p>klik tombol berikut untuk menampilkan konfirmasi</p>
+
+    <button onclick="myFunction()">Klik disini</button>
+
+    <p id="demo"></p>
+
+    <script>
+        function myFunction()
+        {
+            var x;
+
+            var name=prompt ("Silakan masukkan nama anda", "Faisal Tanjung");
+
+            if(name!=null)
+                {
+                    x="Selamat datang  " + name + " bagaimana kabar anda hari ini?";
+                    document.getElementById("demo").innerHTML=x;
+                }
+        }
+    </script>
+
+</body>
+</html>
